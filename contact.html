@@ -107,7 +107,8 @@
                   
                 <div class="box">
                     <!-- <h3>Message box</h3> -->
-                    <form action="message.php" method = "post">
+                   
+                    <!-- <form action="message.php" method = "post">
                         <br>
                         ---------------------------------------
                         -------------------- Message Form ------
@@ -123,12 +124,26 @@
                         Email:<br>
                         <input type="email" name="email">
                         <br>
-                        Message:<br>
+                        Email:<br>
                         <intput type="textarea" name= "message" rows="5" cols="20"> This is the text area</textarea>
                         <br>
-                        <!-- <input type="submit" value = "Send Message"> -->
+                        <input type="submit" value = "Send Message">
                         <button type="submit">Submit</button>
-                    </form>
+                    </form> -->
+
+                    <!-- message box 2 -->
+                    <form action="mail.php" method="post">
+                        <label for="name">Your Name</label>
+                        <input type="text"  name="name" placeholder="Your name..">
+                    
+                        <label for="lname">Email</label>
+                        <input type="email"  name="email" placeholder="Your email..">
+                       
+                        <label for="message">Message</label>
+                        <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
                     
                 </div>
             </section>
