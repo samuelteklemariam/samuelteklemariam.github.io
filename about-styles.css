@@ -1,0 +1,291 @@
+/* CSS Variabkes */
+:root {
+    --primary: #ddd;
+    --dark : #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+html { 
+    box-sizing: border-box;
+    font-family: Ariel, Arial, Helvetica, sans-serif;
+    color:var(--dark);
+}
+
+
+/* Master styles*/
+body{
+    background-image: url(images/portfolio1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /* background: rgb(255, 254, 254); */
+    margin: 2px 5px;
+    line-height: 1.4;
+
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+    
+
+}
+
+/*Nav 2*/
+
+
+.main-nav ul{
+    display: grid;
+    grid-gap: 5px;
+    padding: 0;
+    list-style:none ;
+    grid-template-columns: repeat(6, 1fr) ;
+    /* color of ul */
+}
+
+.logo {
+    /* adding the image for the logo */
+    background:cover;
+
+}
+
+.main-nav ul li{
+   color: #fff;
+}
+
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--dark);
+    font-size: 1rem;
+    box-shadow: var(--dark);
+}
+
+.main-nav a:hover{
+    background: var(--primary);
+    color: var(--light);
+}
+
+.sub-menu{
+    display:none;
+}
+
+/* .main-nav a:hover .sub-menu{
+    display:block;
+    position: absolute;
+    background: rgb(0,1000,0);
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.main-nav a:hover .sub-menu ul{
+    display:block;
+    margin: 10px;
+} */
+
+
+/*Top container */
+.content-wrapper{
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    grid-template-rows: 200px 1fr 1fr 60px ;
+    grid-template-areas: 
+        'showcase showcase header-background'
+        'showcase showcase top-box-b';
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    padding: 5px;
+    gap: 5px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    
+      
+}
+
+.showcase{
+    grid-area: showcase;
+    /* min-height:400px; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    Padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    background-image: url(images/pl-location.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+.showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+
+ 
+.showcase p{
+    font-size:1.3rem;
+    margin-top: 0;
+    color:var(--light);
+}
+
+
+/* box */
+.box{
+    background: var(--primary);
+
+    display:grid;
+    text-decoration: none;
+    align-items: center;
+    justify-items:center ;
+    box-shadow: var(--shadow);
+    padding: 2px;
+}
+
+/* boxes */
+.boxes{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-gap: 2px;
+    align-items: center;
+    padding: 0;
+    list-style:none ;
+       
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.box ul{
+    display: grid;
+    grid-gap: 5px;
+    padding: 0;
+    list-style:none ;
+    grid-template-columns: repeat(6, 1fr) ;
+    align-items: center;
+    text-decoration:none;
+    /* color of ul */
+}
+
+
+/* header-background */
+/* .header-background{
+    grid-area: header-background;
+    background-size:var(--primary);
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr ;
+
+} */
+
+.header-background{
+    grid-area: header-background;
+    display:grid;
+    /* flex-direction: column; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    justify-content:center;
+    text-transform: uppercase;
+    
+}
+
+.header-background-image{
+    width: auto;
+    
+}
+
+/* .content-large {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    min-width: 800px;
+
+} */
+
+.footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: var(--dark);
+    color: var(--light);
+    /* text-align: center; */
+    padding: 10px;
+    /* stick the footer to the bottom */
+    /* margin-top: auto; */
+}
+
+/* MEDIA quaries */
+@media(max-width: 900px) {
+    .content-wrapper{
+        grid-template-areas: 
+        'showcase showcase header-background'
+        'showcase showcase top-box-b';
+        grid-template-columns: 1fr;
+    }
+
+    /* .showcase h1{
+        font-size: 2.5rem;
+        align-items: center;
+    } */
+
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .box{
+        grid-template-columns: 1fr;
+    }
+    /* .showcase .btn{
+        display:block;
+        text-align: center;
+        margin:auto;
+    }    */
+}
+
+body.contactus {
+    background: url(../images/mexicobeach.jpg) no-repeat center center fixed; 
+    
+}
