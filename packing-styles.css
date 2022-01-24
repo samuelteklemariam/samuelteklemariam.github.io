@@ -21,7 +21,7 @@ body{
     background-position: center;
 
     /* background: rgb(255, 254, 254); */
-    margin: 2px 5px;
+    margin: 1px 0px;
     line-height: 1.4;
 
     min-height: 100vh;
@@ -154,12 +154,13 @@ img{
         'showcase showcase top-box-b';
     
     background-size: cover;
-    /* background-image: url(images/pl-packing-0.1.jpg); */
+    background-image: url(images/pl-back.3.jpg);
+    /* background-image: url(images/pl-back.1.jpg); */
 
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     height: 100vh;
     
-    padding: 5px;
+    padding:0px;
     gap: 5px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     
@@ -173,15 +174,16 @@ img{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    Padding: 3px;
+    Padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     box-shadow: var(--shadow);
-    background-image: url(images/pl-packing-0.1.jpg);
+    /* background-image: url(images/pl-packing-0.1.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #ddd;
 
     
 }
@@ -209,12 +211,18 @@ img{
 .box{
     background: var(--primary);
 
-    display:grid;
+    display:flex;
+    flex-direction: column;
     text-decoration: none;
     align-items: center;
     justify-items:center ;
     box-shadow: var(--shadow);
     padding: 2px;
+}
+
+.box {
+    max-width: auto;
+    max-height: auto;
 }
 
 /* boxes */
@@ -223,13 +231,13 @@ img{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    display: grid;
+    display: flex;
     grid-gap: 2px;
     align-items: center;
     padding: 0;
     list-style:none ;
-       
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #ddd; 
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 
 }
 
@@ -264,8 +272,8 @@ img{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-image: url(images/pl-packing-0.3.jpg);
-
+    /* background-image: url(images/pl-packing-0.3.jpg); */
+    background-image: url(images/pl-contact.5.jpg);
     justify-content:center;
     text-transform: uppercase;
     

@@ -53,10 +53,8 @@
             <!-- header-background -->
             <!-- <div class="header-background" style="background-image:url(images/pl-background-2.3.jpg)"></div> -->
             <div class="header-background">
-                <!-- <h1>header-background</h1> -->
-                <!-- <img class="header-background-image" src="images/pl-location.jpg" alt="pl-location"> -->
-                <img class="header-background-image" src="images/pl-contact.jpg"  alt="pl-location">
-
+                <h1>Contact Us</h1>
+                <!-- <img class="services-image" src="images/pl-services-img-1.jpg" alt="pl-printer"> -->
 
             </div>
             <!-- <div class="header-background" style="background-image:url(images/portfolio1.jpg)"></div> -->
@@ -95,9 +93,10 @@
                         <i class="fas fa-map-pin fa-3x"></i>
                         <h2> Location</h2>
                         <h4> Bole Sub-city, Woreda 10
-                               Addis Ababa, Ethiopia
-                                TIN No. 0052293698
+                               Addis Ababa,
                         </h4>
+                        <h4> Ethiopia
+                            TIN No. 0052293698</h4>
                         
                       </li >
                       
@@ -107,10 +106,13 @@
                   
                 <div class="box">
                     <!-- <h3>Message box</h3> -->
-                   
-                    <!-- <form action="message.php" method = "post">
+                   <!-- id="my-form" -->
+                    <form action="https://formspree.io/f/mvolzyav" method = "post" >
+                        <!-- <input type = "hidden" name= "_captcha" value = "false"> -->
+                        <input type = "hidden" name= "_next" value = "https://formspree.io/thanks.html">
+
                         <br>
-                        ---------------------------------------
+                        -----------------------------
                         -------------------- Message Form ------
                         ----------------------------------------
                         -------- <br>
@@ -122,17 +124,20 @@
                         <input type = "text" name="lname">
                         <br>
                         Email:<br>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                         <br>
-                        Email:<br>
-                        <intput type="textarea" name= "message" rows="5" cols="20"> This is the text area</textarea>
+                        Message<br>
+                        <textarea name= "message" rows="5" cols="20"> This is the text area</textarea>
                         <br>
-                        <input type="submit" value = "Send Message">
+                        <!-- <input type="submit" value = "Send Message"> -->
                         <button type="submit">Submit</button>
-                    </form> -->
+                        
+                    </form>
+
+                    <!-- <div id="status" ></div> -->
 
                     <!-- message box 2 -->
-                    <form action="mail.php" method="post">
+                    <!-- <form action="mail.php" method="post">
                         <label for="name">Your Name</label>
                         <input type="text"  name="name" placeholder="Your name..">
                     
@@ -142,13 +147,12 @@
                         <label for="message">Message</label>
                         <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
                     
-                        <input type="submit" value="Submit">
-                      </form>
+                        <button type="submit">Submit</button>
+                      </form> -->
                     
                 </div>
             </section>
-        
-
+            
             <div class="footer">
                 <h4>Copyright 2022 - All Rights Reserved</h4>
                 <h4>Terms & Conditions</h4>
@@ -158,6 +162,6 @@
 
 
     </div>
-    
+    <!-- <script src="./main.js"></script> -->
 </body>
 </html>  

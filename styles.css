@@ -22,7 +22,7 @@ body{
     background-position: center;
 
     /* background: rgb(255, 254, 254); */
-    margin: 2px 5px;
+    margin: 1px 0px;
     line-height: 1.4;
 
     min-height: 100%;
@@ -61,6 +61,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 120px 207px;
     background-image: url(images/pl-nav.jpg);
+    justify-content:flex-end;
 
 
 }
@@ -96,17 +97,20 @@ img{
     grid-gap: 5px;
     padding: 0;
     list-style:none ;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-template-columns: repeat(6, 1fr) ;
+    /* justify-items: right; */
+    border-radius: 5px;
+    grid-template-columns: repeat(5, 1fr) ;
     /* color of ul */
 }
 
 
 .main-nav ul li{
-   color: #fff;
+   color: rgb(191, 248, 172);
+   
 }
 
 
@@ -155,14 +159,14 @@ img{
     
     background-size: cover;
     /* background-image: url(images/pl-paper-types.0.jpg); */
-    /* background-image: url(images/pl-packing-0.1.jpg); */
+    background-image: url(images/pl-back.0.jpg);
 
     /* background-repeat: no-repeat; */
-    background-image: url(images/pl-nav.jpg);
+    /* background-image: url(images/pl-nav.jpg); */
 
     height: 100vh;
     
-    padding: 5px;
+    padding: 0px;
     gap: 5px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     
@@ -285,7 +289,8 @@ img{
 } */
 
 .header-background{
-    background-image: url(images/pl-services-img-2.jpg);
+    /* background-image: url(images/pl-services-img-2.jpg); */
+    background-image: url(images/pl-contact.5.jpg);
     grid-area: header-background;
     display:grid;
     /* flex-direction: column; */

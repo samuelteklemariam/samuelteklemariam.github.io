@@ -21,7 +21,7 @@ body{
     background-position: center;
 
     /* background: rgb(255, 254, 254); */
-    margin: 2px 5px;
+    margin: 1px 0px;
     line-height: 1.4;
 
     min-height: 100vh;
@@ -157,7 +157,7 @@ img{
     background-repeat: no-repeat;
     height: 100vh;
     
-    padding: 5px;
+    padding: 0px;
     gap: 5px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     
@@ -230,14 +230,14 @@ img{
 }
 
 .box ul{
-    display: grid;
+    display: flex;
     grid-gap: 150px;
     padding: 0;
     list-style:none ;
     grid-template-columns: repeat(6, 1fr) ;
     /* align-items: center; */
     text-decoration:none;
-    justify-content: center;
+    justify-content: right;
     /* grid-column-start: 2;
     grid-column-end: 3; */
     /* color of ul */
@@ -248,11 +248,23 @@ img{
    width: 1000px;
    padding:20px;
    font-size:20px;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .box form input [type*post]{
-    padding:5px;
+    /* padding:5px; */
     font-size:15px;
+    width:500%;
+    margin:auto;
+    border: none;
+    outline: none;
+    padding: 20px;
+    /* font-size:24px; */
+    border-radius:8px;
+    font-family: 'Monserrat';
+    /* color:rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer; */
 }
 
 .box form textarea{
@@ -260,7 +272,77 @@ img{
     width: 500px;
     font-size: 15px;
     margin:auto;
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    /* font-size:24px; */
+    border-radius:8px;
+    font-family: 'Monserrat';
+    /* color:rgb(27, 166, 247); */
+    /* text-align: center;
+    cursor: pointer; */
 }
+/* [type="submit"] */
+.box form button {
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size:20px;
+    border-radius:8px;
+    font-family: 'Monserrat';
+    color:rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease background-color;
+
+}
+
+.box form button:hover{
+    background-color: rgba(104, 104, 104, 0.8);
+    color:rgb(255, 255, 255);
+
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px ;
+}
+
+
+#status.sucess{
+    background-color: rgb(130, 244, 96);
+    /* animation: status 4s ease  forwards; */
+}
+
+#status.error{
+    background-color: rgb(224, 30, 30);
+    color: white;
+    /* animation: status 4s ease  forwards; */
+}
+
+@keyframes status{
+    0%{
+        opacity:1;
+        pointer-events: all;
+    }
+    90%{
+        opacity:1;
+        pointer-events: all;
+    }
+    00%{
+        opacity:0;
+        pointer-events: none;
+    }
+    
+}
+
+
 
 /* header-background */
 /* .header-background{
@@ -274,8 +356,11 @@ img{
 } */
 
 .header-background{
+    background-image: url(images/pl-contact.5.jpg);
+    background-image-repeat: none;
     grid-area: header-background;
     display:grid;
+    height: auto;
     /* flex-direction: column; */
     grid-column-start: 1;
     grid-column-end: 4;
@@ -289,7 +374,20 @@ img{
 
 .header-background-image{
     width: auto;
-    
+    height: auto; 
+       
+}
+
+.header-background h1{
+    text-align: center;
+    /* position:absolute; */
+    top:50%;
+    color: white;
+    width:100%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 /* .content-large {
