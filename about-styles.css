@@ -16,7 +16,7 @@ html {
 
 /* Master styles*/
 body{
-    background-image: url(images/portfolio1.jpg);
+    /* background-image: url(images/portfolio1.jpg); */
     background-size: cover;
     background-position: center;
 
@@ -55,20 +55,56 @@ img{
 /*Nav 2*/
 
 
+.main-nav{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 207px;
+    background-image: url(images/pl-nav.jpg);
+
+
+}
+.main-nav h2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;  
+    color: var(--light);  
+}
+
+.main-nav h3{
+    color: var(--light);  
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px; 
+    text-indent: 20px;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 160px ;
+}
+
+
 .main-nav ul{
     display: grid;
     grid-gap: 5px;
     padding: 0;
     list-style:none ;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-template-columns: repeat(6, 1fr) ;
     /* color of ul */
 }
 
-.logo {
-    /* adding the image for the logo */
-    background:cover;
-
-}
 
 .main-nav ul li{
    color: #fff;
@@ -142,7 +178,7 @@ img{
     align-items: start;
     justify-content: center;
     box-shadow: var(--shadow);
-    background-image: url(images/pl-location.jpg);
+    background-image: url(images/pl-commp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -231,6 +267,10 @@ img{
 .header-background-image{
     width: auto;
     
+}
+
+.header-background h1{
+    text-align: center;
 }
 
 /* .content-large {
